@@ -1,12 +1,6 @@
-import {
-  Button,
-  Image,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
+
 // icons
 // import { EvilIcons } from "@expo/vector-icons";
 
@@ -23,7 +17,9 @@ function Login({ navigation }: any) {
         />
         <TouchableOpacity
           style={styles.loginBtn}
-          onPress={() => navigation.navigate("login")}
+          onPress={() => {
+            navigation.navigate("login");
+          }}
         >
           <Text style={{ color: "white", fontSize: 16, fontWeight: "700" }}>
             Login
@@ -31,7 +27,10 @@ function Login({ navigation }: any) {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.loginOutlineBtn}
-          onPress={() => navigation.navigate("signup")}
+          onPress={() => {
+            navigation.navigate("signup");
+            console.log("working");
+          }}
         >
           <Text style={{ color: "#1E232C", fontSize: 16, fontWeight: "700" }}>
             Register

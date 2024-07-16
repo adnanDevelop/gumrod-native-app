@@ -1,4 +1,4 @@
-import { StyleSheet, View, StatusBar, Text } from "react-native";
+import { StyleSheet, StatusBar } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -19,7 +19,7 @@ function App() {
       />
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="screens"
+          initialRouteName="screen"
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="welcome" component={Welcome} />
