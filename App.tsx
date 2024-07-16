@@ -5,11 +5,12 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const Stack = createNativeStackNavigator();
 
 // Screens
-import Welcome from "./screen/Welcome";
-import Signup from "./screen/Signup";
 import Login from "./screen/Login";
-import Password from "./screen/Password";
+import Signup from "./screen/Signup";
+import Welcome from "./screen/Welcome";
 import Success from "./screen/Success";
+import Listing from "./screen/Listing";
+import Password from "./screen/Password";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Stack.Screen name="login" component={Login} />
           <Stack.Screen name="password" component={Password} />
           <Stack.Screen name="success" component={Success} />
+          <Stack.Screen name="listing" component={Listing} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
