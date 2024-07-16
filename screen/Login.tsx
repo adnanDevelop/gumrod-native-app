@@ -51,7 +51,7 @@ const Login = ({ navigation }: any) => {
         {/* Submit button */}
         <TouchableOpacity
           style={styles.loginBtn}
-          onPress={() => navigation.navigate("login")}
+          onPress={() => navigation.navigate("welcome")}
         >
           <Text style={{ color: "white", fontSize: 16, fontWeight: "700" }}>
             Login
