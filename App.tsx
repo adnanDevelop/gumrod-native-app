@@ -9,6 +9,7 @@ import Welcome from "./screen/Welcome";
 import Signup from "./screen/Signup";
 import Login from "./screen/Login";
 import Password from "./screen/Password";
+import Success from "./screen/Success";
 
 function App() {
   return (
@@ -20,13 +21,14 @@ function App() {
       />
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="screen"
+          initialRouteName="welcome"
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="welcome" component={Welcome} />
           <Stack.Screen name="signup" component={Signup} />
           <Stack.Screen name="login" component={Login} />
           <Stack.Screen name="password" component={Password} />
+          <Stack.Screen name="success" component={Success} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

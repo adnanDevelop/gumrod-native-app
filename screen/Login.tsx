@@ -41,9 +41,12 @@ const Login = ({ navigation }: any) => {
             placeholderTextColor="#8391A1"
           />
         </View>
-        <View style={styles.forgetText}>
+        <TouchableOpacity
+          style={styles.forgetText}
+          onPress={() => navigation.navigate("password")}
+        >
           <Text style={{ textAlign: "right" }}>Forget Password?</Text>
-        </View>
+        </TouchableOpacity>
 
         {/* Submit button */}
         <TouchableOpacity
