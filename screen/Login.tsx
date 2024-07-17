@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Image,
   StyleSheet,
   Text,
   TextInput,
@@ -27,6 +26,7 @@ const Login = ({ navigation }: any) => {
           Welcome back! Glad to see you, Again!
         </Text>
 
+        {/* email input */}
         <View style={{ marginBottom: 15 }}>
           <TextInput
             style={styles.input}
@@ -34,6 +34,8 @@ const Login = ({ navigation }: any) => {
             placeholderTextColor="#8391A1"
           />
         </View>
+
+        {/* password input */}
         <View>
           <TextInput
             style={styles.input}
@@ -119,7 +121,7 @@ const styles = StyleSheet.create({
     height: 56,
     borderWidth: 2,
     borderRadius: 8,
-    borderColor: "#1E232C",
+    borderColor: "#E8ECF4",
     paddingHorizontal: 10,
     color: "gray",
   },
